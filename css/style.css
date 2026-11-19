@@ -222,26 +222,8 @@ a.tile:hover .tt, a.tile:focus-visible .tt { text-decoration: underline; }
 .levels li span { color: var(--mute); }
 .levels li em { font-style: normal; color: var(--mute); }
 .apol { margin: 0; max-width: 42rem; }
-/* assessment plan grid */
-.ptitle { font-size: .95rem; margin: 1.1rem 0 .3rem; color: var(--mute); }
-.pwrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
-.pgrid { border-collapse: separate; border-spacing: 0; font-size: .85rem; min-width: 100%; }
-.pgrid th, .pgrid td { border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); padding: .3rem .25rem; text-align: center; }
-.pgrid thead th { background: var(--soft); }
-.pgrid .pg { font-size: .8rem; font-weight: 700; padding: .4rem .3rem; }
-.pgrid .pc { height: 8.5rem; vertical-align: bottom; font-weight: 400; min-width: 2.1rem; }
-.pgrid .pc span { writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; text-align: left; line-height: 1.2; max-height: 8rem; }
-.pgrid .pcode { font-size: .7rem; font-weight: 400; color: var(--mute); }
-.pgrid .pn { position: sticky; left: 0; z-index: 1; text-align: left; background: var(--bg); border-left: 0; min-width: 6.4rem; padding-left: .6rem; }
-.pgrid thead .pn { background: var(--soft); }
-.pgrid .pn b { display: block; line-height: 1.2; }
-.pgrid .pn span { font-size: .75rem; color: var(--mute); font-weight: 400; }
-.pgrid tbody .quiz .pn b, .pgrid tbody .test .pn b, .pgrid tbody .exam .pn b { color: var(--test-bg); }
-.pgrid tbody tr.test td, .pgrid tbody tr.exam td, .pgrid tbody tr.test .pn, .pgrid tbody tr.exam .pn { background: var(--soft); }
-.pgrid tbody tr:last-child th, .pgrid tbody tr:last-child td { border-bottom: 0; }
-.pgrid .ck { color: var(--accent); font-weight: 700; font-size: 1.05rem; }
-.pgrid .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-.pgrid .pg.g1 { color: var(--violet-ink, inherit); } .pgrid .pg.g2 { color: var(--orange-ink, inherit); } .pgrid .pg.g3 { color: var(--teal-ink, inherit); } .pgrid .pg.g4 { color: var(--pink-ink, inherit); }
+.ostr { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: .7rem 0 0; }
+.ostr li { padding: .25rem .7rem; border: 1px solid var(--line); border-radius: 999px; background: var(--soft); font-size: .9rem; }
 @media (max-width: 30rem) {
   .arow { grid-template-columns: 1fr; }
   .arows .arow:not(.quiz):not(.test):not(.exam) { grid-template-columns: 1fr; }
